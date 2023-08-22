@@ -1,0 +1,40 @@
+<div>
+    <h2>Employee Attendance</h2>
+    <form (ngSubmit)="recordAttendance()">
+      <label>Employee ID:</label>
+      <input [(ngModel)]="newAttendance.employeeId" name="employeeId" required><br>
+      <label>Employee Name:</label>
+      <input [(ngModel)]="newAttendance.employeeName" name="employeeName" required><br>
+      <label>In Time:</label>
+      <input type="datetime-local" [(ngModel)]="newAttendance.inTime" name="inTime" required><br>
+      <label>Out Time:</label>
+      <input type="datetime-local" [(ngModel)]="newAttendance.outTime" name="outTime" required><br>
+      <button type="submit">Record Attendance</button>
+    </form>
+    <div class="table-responsive-sm">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Employee ID</th>
+                    <th>Employee Name</th>
+                    <th>In Time</th>
+                    <th>Out Time</th>
+                    <th>Duration</th>
+
+                </tr>
+            </thead>
+            <tbody>              
+                <ng-container *ngFor="let u of attendance">
+                <tr>
+                    <td>{{u.employeeId}}</td>
+                    <td>{{ u.employeeName }}</td>
+                    <td>{{u.inTime}}</td>
+                    <td>{{u.outTime}}</td>
+                    <td>{{u.duration}}</td>
+                  </tr>
+              </ng-container>
+            </tbody>          
+        </table>
+      </div>    
+    
+</div>

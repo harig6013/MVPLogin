@@ -1,0 +1,17 @@
+div{
+    text-align: center;
+    position:initial;
+    margin-top: 40%;
+    bottom: 0%;
+    background-color: skyblue;
+    width: 100%;
+    padding: 1%;
+    color: white;
+    
+}
+div:hover{
+    background-color: rgb(104, 198, 235);
+}
+a{
+    text-decoration: none;
+}

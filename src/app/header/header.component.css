@@ -1,0 +1,13 @@
+div{
+    width: 100%;
+    background-color: skyblue;
+    padding:0;
+}
+div:hover{
+    background-color: rgb(104, 198, 235);
+}
+img{
+    padding-left: 3%;
+    height: 5%;
+    width: 8%;
+}

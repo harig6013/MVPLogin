@@ -1,0 +1,48 @@
+body , .login{
+    align-items: center;
+    border: 0;
+    
+}
+.login{
+    margin-top: 10%;
+    width: 30%;
+border: 0px solid;
+border-radius: 5px; 
+margin-left: 35%; 
+margin-right: 30%; 
+background-color: gray; 
+padding: 2% 20px; 
+font-size:medium;
+box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.685), 0 10px 30px 0 rgba(0, 0, 0, 0.671);
+}
+#password, #userId{
+ font-family:'Courier New', Courier, monospace;
+ background-color: white;
+ margin: 0.4rem 0;
+ letter-spacing: 1px; 
+ color:black;
+ width: 70%;
+ border-bottom: 5px, solid, skyblue;
+}
+.email, .password{
+    padding: 10%;
+}
+#submit{
+float: left;
+background-color: gray;
+ font-style: oblique; 
+ font-weight: bolder;
+ margin-left: 25%;
+ margin-right: 30%;
+ width: 50%;
+ border:0px solid;
+ padding: 0%;
+}
+#submit:enabled:hover{
+color: brown;
+cursor: pointer;
+}
+#ermsg{
+    color: red;
+    font-size:xx-small;
+}

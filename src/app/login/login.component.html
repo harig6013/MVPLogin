@@ -1,0 +1,18 @@
+<html>
+<head> <title> Login to MVP Infotec Pvt Ltd.</title></head>
+<body><form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="login" align="center"><h3 style="color: blue;">Login</h3>
+    <div class="email"><label for="email" style="color: blue;">Email ID :</label>  <input type ="email" [(ngModel)]="user.userId" formControlName="email" id="userId" name="userId" placeholder="name@example.com">
+    <div *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched">
+        <div id="ermsg" *ngIf="loginForm.get('email')?.errors?.['required']"><span>Email is required!</span></div>
+        <div id="ermsg" *ngIf="loginForm.get('email')?.errors?.['email']"><span id="ermsg">Invalid email format!</span></div>
+    </div></div>
+    <div class="password"><label for="password" style="color: blue;">Password :</label> <input type="password" [(ngModel)]="user.password"  formControlName="password" id="password" name="password" placeholder="Password">
+    <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">
+        <div id="ermsg" *ngIf="loginForm.get('password')?.errors?.['required']"><span>Password is required!</span></div>
+    </div></div>
+    <div><button id="submit" [disabled]="loginForm.invalid">LOGIN</button></div>
+    </div>
+    </form>
+</body>
+</html>

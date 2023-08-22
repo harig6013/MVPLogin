@@ -1,0 +1,74 @@
+.items{
+    background-color: rgb(240, 182, 74);
+    border:  0px solid ;
+    border-radius: 10px;
+    height: 1cm;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.685), 0 5px 15px 0 rgba(0, 0, 0, 0.671);
+    }
+    #item,#item1,#item7{
+        float: left;
+        padding: 0.5% 5%;
+        position: relative;
+    }
+    a:link, a:visited {
+      background-color: yellow;
+      border-radius: 5px;
+      color: black;
+      padding: 3px 5px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+    a:hover, a:active {
+      background-color: orange;
+      color: white;
+    }
+    .Hrpo , .Aop{
+        visibility: hidden;
+        position: absolute;
+        display: inline-block;
+        background-color: yellow;
+        border-radius: 10px;
+        padding: 1% 2%;
+        z-index: 1;
+        top: 100%;
+        left: 50%;
+        margin-left: -60px;
+    }
+    #link{
+        background-color: yellow;
+        color: grey;
+    }
+    #item1:hover .Hrpo{
+        visibility: visible;
+    }
+    #item7:hover .Aop{
+        visibility: visible;
+    }
+    #link:hover{
+        color :black;
+    }
+    .arrow , .down{
+        border: solid black;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
+    span{
+        color: blue;
+    }
+    marquee{
+    background-color: blue;
+    padding-right: 1%;
+    color: whitesmoke;
+    direction: rtl;
+    height: 2%;
+    width: 5%;
+    }
+    .para{
+        background-color:orange;
+        opacity: .5;
+    }
