@@ -15,15 +15,15 @@ public class UserServiceImpl implements UserService {
 	private UserRepository userRepository;
 	
 	@Override
-	public ResponseEntity<?> loginUser(UserDetails userDetails) {
+	public ResponseEntity<UserDetails> loginUser(UserDetails userDetails) {
 		
 		UserEntity userEntity = new UserEntity();
 		userEntity.setUserId(userDetails.getUserId());
 		userEntity.setPassword(userDetails.getPassword());
 		UserEntity user=userRepository.findByUserId(userEntity.getUserId());
 		if(user.getPassword().equals(userEntity.getPassword())) 
-			  return ResponseEntity.ok(user); 
-		  return (ResponseEntity<?>)ResponseEntity.internalServerError(); 
+			  return ResponseEntity.ok(userDetails); 
+		  return (ResponseEntity<UserDetails>)ResponseEntity.internalServerError(); 
 		  }
 
 }

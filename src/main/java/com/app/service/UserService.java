@@ -5,5 +5,5 @@ import com.app.dto.UserDetails;
 
 public interface UserService {
 
-	ResponseEntity<?> loginUser(UserDetails userDetails);
+	ResponseEntity<UserDetails> loginUser(UserDetails userDetails);
 }
